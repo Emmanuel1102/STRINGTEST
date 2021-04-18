@@ -6,7 +6,7 @@
           
              texto= texto.replaceAll("(?=\\s)", "\n");        
        // System.out.println(valor);
-        return texto;
+        return texto +"\n";
     }
 //seguda forma ya sirve
 @Override
