@@ -8,27 +8,27 @@
        // System.out.println(valor);
         return texto;
     }
-//segunda forma este tiene el error de repetir la cadena esto es por el return
+//seguda forma ya sirve
 @Override
     public String getTexto() {
        
-           //String t = "";
+           String t = "";
           String[] bar = texto.split("(?=\\s)");
                 for (String foobar : bar ){
                   System.out.println(foobar);
            }
-        return texto;
+        return t;
     }
-//Tercera forma mismo error de repetir el string por el return
+//Tercera forma ya sirve
 @Override
-    public String getTexto() {
-       
-          //String text = "LA MASCARA DEL CAOS";
-        String[] vacio = texto.split("(?=\\s)");
+    public String getTexto() {     
+        
+    String[] vacio = texto.split("(?=\\s)");
+    String algo="";
  
         for (int i = 0; i < vacio.length; i++) {
-	System.out.println(vacio[i]);
+      System.out.println(vacio[i]);
         
             }
-            return texto;    
+            return algo;     
     }
