@@ -1,0 +1,34 @@
+// primer formar
+  @Override
+    public String getTexto() {
+       
+           //String t = "";
+          
+             texto= texto.replaceAll("(?=\\s)", "\n");        
+       // System.out.println(valor);
+        return texto;
+    }
+//segunda forma este tiene el error de repetir la cadena esto es por el return
+@Override
+    public String getTexto() {
+       
+           //String t = "";
+          String[] bar = texto.split("(?=\\s)");
+                for (String foobar : bar ){
+                  System.out.println(foobar);
+           }
+        return texto;
+    }
+//Tercera forma mismo error de repetir el string por el return
+@Override
+    public String getTexto() {
+       
+          //String text = "LA MASCARA DEL CAOS";
+        String[] vacio = texto.split("(?=\\s)");
+ 
+        for (int i = 0; i < vacio.length; i++) {
+	System.out.println(vacio[i]);
+        
+            }
+            return texto;    
+    }
